@@ -2,8 +2,13 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Process from "@/components/Process";
+import Comparison from "@/components/Comparison";
 import Testimonials from "@/components/Testimonials";
 import Pricing from "@/components/Pricing";
+import FAQ from "@/components/FAQ";
+import Strategy from "@/components/Strategy";
+import FinalCTA from "@/components/FinalCTA";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -12,9 +17,14 @@ export default function Home() {
       <Hero />
       <Features />
       <Process />
+      <Comparison />
       <Testimonials />
+      <Strategy />
+
       <Pricing />
-      {/* Sections will be added here */}
+      <FAQ />
+      <FinalCTA />
+      <Footer />
     </main>
   );
 }
