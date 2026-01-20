@@ -16,9 +16,21 @@
   --color-accent: var(--accent);
   --color-accent-hover: var(--accent-hover);
   --color-border: var(--border);
-  
+
   --font-sans: var(--font-inter);
   --font-heading: var(--font-outfit);
+
+  --animate-scroll: scroll 40s linear infinite;
+
+  @keyframes scroll {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

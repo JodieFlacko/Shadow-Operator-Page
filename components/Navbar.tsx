@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { Menu, Box } from "lucide-react";
 
@@ -9,6 +11,15 @@ export default function Navbar() {
         { name: "Projects", href: "#projects" },
         { name: "Contact Us", href: "#contact" },
     ];
+
+    const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
+        e.preventDefault();
+        const targetId = href.replace("#", "");
+        const elem = document.getElementById(targetId);
+        elem?.scrollIntoView({
+            behavior: "smooth",
+        });
+    };
 
     return (
         <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-5xl px-4">
@@ -27,6 +38,7 @@ export default function Navbar() {
                         <Link
                             key={link.name}
                             href={link.href}
+                            onClick={(e) => handleScroll(e, link.href)}
                             className="text-sm font-medium text-muted hover:text-purple-600 transition-colors"
                         >
                             {link.name}

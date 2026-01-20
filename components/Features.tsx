@@ -32,7 +32,7 @@ const features = [
 
 export default function Features() {
     return (
-        <section id="features" className="py-24 bg-white relative">
+        <section id="services" className="py-24 bg-white relative">
             <div className="max-w-7xl mx-auto px-6">
                 <FadeIn>
                     <div className="text-center mb-16">
