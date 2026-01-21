@@ -125,7 +125,7 @@ export default function FAQ() {
                 </div>
 
                 {/* FAQ Grid */}
-                <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-8">
+                <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-8">
                     {/* Left Column */}
                     <div className="flex flex-col gap-4">
                         {leftQuestions.map((item, index) => (

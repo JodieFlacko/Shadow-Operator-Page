@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Box, Twitter, Instagram, Facebook, Globe } from "lucide-react";
 
 const socialLinks = [
@@ -24,10 +25,22 @@ export default function Footer() {
                 {/* Top Row: Brand & Socials */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                     {/* Logo Badge */}
-                    <div className="flex items-center gap-2 bg-purple-600 rounded-lg px-3 py-1 shadow-sm">
-                        <Box className="w-5 h-5 text-white" />
-                        <span className="text-white font-bold tracking-wide">LOS</span>
-                    </div>
+                    {/* Logo Badge */}
+                    <Link href="/" className="flex items-center gap-2">
+                        <div className="relative h-[32px] w-auto">
+                            <Image
+                                src="/logo.png"
+                                alt="Lander OS Logo"
+                                width={0}
+                                height={0}
+                                sizes="100vw"
+                                style={{ width: 'auto', height: '32px' }}
+                            />
+                        </div>
+                        <span className="font-heading font-bold text-xl tracking-tight text-gray-900">
+                            Lander OS
+                        </span>
+                    </Link>
 
                     {/* Social Icons */}
                     <div className="flex items-center gap-4">

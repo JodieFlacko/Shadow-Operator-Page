@@ -17,6 +17,11 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Lander OS - AI Agency",
   description: "Lead your business with AI-Automation",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({

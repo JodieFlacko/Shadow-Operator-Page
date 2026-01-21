@@ -6,7 +6,7 @@ import FadeIn from "./FadeIn";
 
 export default function Contact() {
     return (
-        <section className="relative min-h-screen pt-32 pb-24 overflow-hidden bg-gradient-to-br from-purple-100 via-pink-50 to-white">
+        <section className="relative min-h-screen px-6 py-12 pt-24 md:pt-32 md:pb-24 overflow-hidden bg-gradient-to-br from-purple-100 via-pink-50 to-white">
             {/* Cloud/Background Effects */}
             <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
                 <div className="absolute top-[10%] left-[5%] w-96 h-96 bg-purple-200/40 rounded-full blur-3xl" />
@@ -16,7 +16,7 @@ export default function Contact() {
             <div className="container mx-auto px-4 relative z-10">
                 <FadeIn>
                     <div className="max-w-6xl mx-auto bg-white/40 backdrop-blur-xl rounded-[3rem] shadow-2xl border border-white/50 p-8 md:p-12 overflow-hidden">
-                        <div className="grid md:grid-cols-2 gap-12 md:gap-20">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
                             {/* Left Column: Info */}
                             <div className="flex flex-col justify-center">
                                 <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-8">

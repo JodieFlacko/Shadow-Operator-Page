@@ -36,7 +36,7 @@ export default function Hero() {
         <section
             ref={containerRef}
             onMouseMove={handleMouseMove}
-            className="relative pt-40 pb-24 overflow-hidden bg-gradient-to-b from-purple-50 to-white"
+            className="relative px-6 py-12 pt-32 md:p-20 md:pt-40 pb-24 overflow-hidden bg-gradient-to-b from-purple-50 to-white"
         >
             {/* Background Gradients */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-[radial-gradient(ellipse_at_top,var(--color-accent)_0%,transparent_50%)] opacity-10 blur-3xl -z-10" />
@@ -53,7 +53,7 @@ export default function Hero() {
                 </FadeIn>
 
                 <FadeIn delay={0.2}>
-                    <h1 className="font-heading text-6xl md:text-7xl font-medium leading-[1.1] tracking-tight text-foreground mb-6">
+                    <h1 className="font-heading text-4xl md:text-7xl font-medium leading-[1.1] tracking-tight text-foreground mb-6">
                         Lead your business with <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-400">AI-Automation</span>
                     </h1>
                 </FadeIn>
@@ -79,7 +79,7 @@ export default function Hero() {
                         style={{ perspective: "1000px" }}
                     >
                         <div
-                            className="grid grid-cols-2 gap-4 transition-transform duration-100 ease-out preserve-3d"
+                            className="grid grid-cols-2 gap-4 transition-transform duration-100 ease-out preserve-3d scale-75 md:scale-100"
                             id="cube-grid"
                         >
                             <motion.div
