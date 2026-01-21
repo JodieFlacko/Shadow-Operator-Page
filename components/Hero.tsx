@@ -1,11 +1,43 @@
 "use client";
 
+import { useRef } from "react";
 import { motion } from "framer-motion";
+import { Settings, Sparkles, PieChart, Code } from "lucide-react";
+import Cube from "./3d/Cube";
 import FadeIn from "./FadeIn";
 
 export default function Hero() {
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (!containerRef.current) return;
+
+        const { left, top, width, height } = containerRef.current.getBoundingClientRect();
+        const centerX = left + width / 2;
+        const centerY = top + height / 2;
+
+        // Calculate distance from center
+        const mouseX = e.clientX - centerX;
+        const mouseY = e.clientY - centerY;
+
+        // Apply heavy dampening for subtle effect (max ~5-10deg)
+        const rotateX = (mouseY / 50) * -1; // Invert axis for natural feel
+        const rotateY = mouseX / 50;
+
+        // Apply transformations to the grid container
+        // We start with a base 0 rotation since the Cubes handle their own isometric tilt
+        const grid = document.getElementById('cube-grid');
+        if (grid) {
+            grid.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        }
+    };
+
     return (
-        <section className="relative pt-40 pb-24 overflow-hidden bg-gradient-to-b from-purple-50 to-white">
+        <section
+            ref={containerRef}
+            onMouseMove={handleMouseMove}
+            className="relative pt-40 pb-24 overflow-hidden bg-gradient-to-b from-purple-50 to-white"
+        >
             {/* Background Gradients */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-[radial-gradient(ellipse_at_top,var(--color-accent)_0%,transparent_50%)] opacity-10 blur-3xl -z-10" />
 
@@ -42,21 +74,81 @@ export default function Hero() {
 
                 {/* Isometric Placeholder Grid */}
                 <FadeIn delay={0.5}>
-                    <div className="relative mt-8 mx-auto -z-10 w-fit pointer-events-none select-none" style={{ perspective: "1000px" }}>
-                        <div className="grid grid-cols-2 gap-4 transform rotate-x-12 rotate-z-[-10deg] opacity-80">
-                            {[...Array(4)].map((_, i) => (
-                                <motion.div
-                                    key={i}
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    transition={{ delay: 0.6 + (i * 0.1), duration: 0.8 }}
-                                    className="w-24 h-24 sm:w-32 sm:h-32 bg-purple-100 rounded-xl shadow-inner border border-purple-200/50"
-                                />
-                            ))}
+                    <div
+                        className="relative mt-8 mx-auto -z-10 w-fit pointer-events-none select-none"
+                        style={{ perspective: "1000px" }}
+                    >
+                        <div
+                            className="grid grid-cols-2 gap-4 transition-transform duration-100 ease-out preserve-3d"
+                            id="cube-grid"
+                        >
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.6, duration: 0.8 }}
+                                className="w-24 h-24 sm:w-32 sm:h-32 [--cube-size:6rem] sm:[--cube-size:8rem] animate-float"
+                                style={{ animationDelay: "0s" }}
+                            >
+                                <Cube>
+                                    <Code className="w-10 h-10 text-purple-600 opacity-80" />
+                                </Cube>
+                            </motion.div>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.7, duration: 0.8 }}
+                                className="w-24 h-24 sm:w-32 sm:h-32 [--cube-size:6rem] sm:[--cube-size:8rem] animate-float"
+                                style={{ animationDelay: "1.5s" }}
+                            >
+                                <Cube>
+                                    <Sparkles className="w-10 h-10 text-purple-600 opacity-80" />
+                                </Cube>
+                            </motion.div>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.8, duration: 0.8 }}
+                                className="w-24 h-24 sm:w-32 sm:h-32 [--cube-size:6rem] sm:[--cube-size:8rem] animate-float"
+                                style={{ animationDelay: "3s" }}
+                            >
+                                <Cube>
+                                    <Settings className="w-10 h-10 text-purple-600 opacity-80" />
+                                </Cube>
+                            </motion.div>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.9, duration: 0.8 }}
+                                className="w-24 h-24 sm:w-32 sm:h-32 [--cube-size:6rem] sm:[--cube-size:8rem] animate-float"
+                                style={{ animationDelay: "4.5s" }}
+                            >
+                                <Cube>
+                                    <PieChart className="w-10 h-10 text-purple-600 opacity-80" />
+                                </Cube>
+                            </motion.div>
                         </div>
                         {/* Floating Orbs for extra depth */}
-                        <div className="absolute -top-10 -right-10 w-20 h-20 bg-purple-600/10 rounded-full blur-xl" />
-                        <div className="absolute -bottom-5 -left-10 w-32 h-32 bg-purple-600/10 rounded-full blur-2xl" />
+                        <div className="absolute -top-10 -right-10 w-20 h-20 bg-purple-600/10 rounded-full blur-xl animate-pulse" />
+                        <div className="absolute -bottom-5 -left-10 w-32 h-32 bg-purple-600/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: "2s" }} />
+                    </div>
+                </FadeIn>
+
+                {/* Trusted By Fade In */}
+                <FadeIn delay={0.8}>
+                    <div className="mt-20 opacity-0 animate-fade-in-up" style={{ animationFillMode: 'forwards' }}>
+                        <p className="text-sm font-medium text-muted/60 uppercase tracking-widest mb-6">
+                            Trusted by big brands around the world
+                        </p>
+                        {/* Placeholder for logos */}
+                        <div className="flex justify-center gap-8 opacity-50 grayscale">
+                            <div className="h-8 w-24 bg-current/20 rounded"></div>
+                            <div className="h-8 w-24 bg-current/20 rounded"></div>
+                            <div className="h-8 w-24 bg-current/20 rounded"></div>
+                            <div className="h-8 w-24 bg-current/20 rounded"></div>
+                        </div>
                     </div>
                 </FadeIn>
             </div>
