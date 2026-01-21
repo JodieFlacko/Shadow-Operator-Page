@@ -1,36 +1,56 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, Box } from "lucide-react";
 
 export default function Navbar() {
+    const pathname = usePathname();
+
     const navLinks = [
-        { name: "Services", href: "#services" },
-        { name: "Reviews", href: "#reviews" },
-        { name: "Pricing", href: "#pricing" },
-        { name: "Projects", href: "#projects" },
-        { name: "Contact Us", href: "#contact" },
+        { name: "Services", href: "/#services" },
+        { name: "Reviews", href: "/#reviews" },
+        { name: "Pricing", href: "/#pricing" },
+        { name: "Projects", href: "/#projects" },
+        { name: "Contact Us", href: "/contact" },
     ];
 
     const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
-        e.preventDefault();
-        const targetId = href.replace("#", "");
-        const elem = document.getElementById(targetId);
-        elem?.scrollIntoView({
-            behavior: "smooth",
-        });
+        // Only run smooth scroll logic if we are on the homepage AND the link is an anchor link
+        if (pathname === "/" && href.startsWith("/#")) {
+            e.preventDefault();
+            const targetId = href.replace("/#", "");
+            const elem = document.getElementById(targetId);
+            elem?.scrollIntoView({
+                behavior: "smooth",
+            });
+        }
+    };
+
+    const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+        if (pathname === "/") {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        }
     };
 
     return (
         <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-5xl px-4">
             <div className="flex items-center justify-between w-full px-6 py-3 rounded-full shadow-lg backdrop-blur-md bg-white/80 border border-white/40">
                 {/* Logo */}
-                <div className="flex items-center gap-2">
+                <Link
+                    href="/"
+                    onClick={handleLogoClick}
+                    className="flex items-center gap-2 cursor-pointer"
+                >
                     <Box className="w-8 h-8 text-purple-600" strokeWidth={2.5} />
                     <span className="font-heading font-bold text-xl tracking-tight text-foreground hidden sm:block">
                         Lander OS
                     </span>
-                </div>
+                </Link>
 
                 {/* Desktop Nav Links */}
                 <nav className="hidden md:flex items-center gap-8">
