@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   title: "Lander OS - AI Agency",
   description: "Lead your business with AI-Automation",
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/logo.png", // Keeping logo.png for Apple touch icon as .ico is not supported there usually, or user might want the high res png there. I'll stick to what is likely to exist or be safe. The user said "I want that to be my favicon". Usually apple touch icon is png. I will assume they might validly have a logo.png still for the navbar.
   },
 };
 

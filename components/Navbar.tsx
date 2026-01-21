@@ -72,7 +72,7 @@ export default function Navbar() {
                             />
                         </div>
                         <span className="font-heading font-bold text-xl tracking-tight text-foreground hidden sm:block">
-                            Lander OS
+                            Prima Studio Media
                         </span>
                     </Link>
 
