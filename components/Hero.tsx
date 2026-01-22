@@ -23,26 +23,26 @@ export default function Hero() {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-600 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-600"></span>
                         </span>
-                        <span className="text-xs font-medium text-muted uppercase tracking-wider">New Gen AI Automation Partner</span>
+                        <span className="text-xs font-medium text-muted uppercase tracking-wider">Resolve The Invisible Leak in Your Business</span>
                     </div>
                 </FadeIn>
 
                 <FadeIn delay={0.2}>
                     <h1 className="font-heading text-4xl md:text-7xl font-medium leading-[1.1] tracking-tight text-foreground mb-6">
-                        Lead your business with <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-400">AI-Automation</span>
+                        Turn Your Audience Into <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-purple-400">Qualified Buyers</span> Without Being Pushy
                     </h1>
                 </FadeIn>
 
                 <FadeIn delay={0.3}>
                     <p className="text-muted text-lg md:text-xl max-w-2xl leading-relaxed mb-10 mx-auto">
-                        We help businesses harness the power of AI to work smarter, scale faster, and innovate boldly using custom automation & intelligent solutions.
+                        We install a private pipeline that converts your wellness followers into sales-ready clients in 90 days. No desperate tactics. No brand damage. Just predictable revenue.
                     </p>
                 </FadeIn>
 
                 <FadeIn delay={0.4}>
                     <div className="flex flex-col sm:flex-row items-center gap-4 justify-center mb-16">
                         <button className="h-12 px-8 rounded-full bg-purple-600 hover:bg-purple-700 text-white font-medium text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer">
-                            Book A Free Call Now
+                            See How It Works
                         </button>
                     </div>
                 </FadeIn>

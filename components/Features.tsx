@@ -6,35 +6,35 @@ import FadeIn from "./FadeIn";
 
 const features = [
     {
-        title: "Workflow Assessment",
-        description: "We analyze your current processes to identify high-impact automation opportunities.",
+        title: "Wellness Coaches With an Engaged Audience",
+        description: "You've built a loyal following that trusts your expertise, but you're stuck trading time for money with inconsistent 1-on-1 bookings and no clear path to scale.",
         icon: Workflow,
     },
     {
-        title: "Deploy with Confidence",
+        title: "Holistic Health Creators Struggling to Monetize",
         description: "Our custom AI systems are built rigorously to ensure reliability and scalability.",
         icon: Rocket,
     },
     {
-        title: "Ongoing Support",
-        description: "We don't just launch and leave. We provide continuous support and optimization.",
+        title: "Mindfulness Experts Ready to Systemize",
+        description: "You know your audience needs a deeper solution beyond free content, but you feel overwhelmed by the technical side of building offers and sales systems.",
         icon: Headphones,
     },
-    {
-        title: "Data-driven",
-        description: "Turn your raw business data into actionable insights for better decision-making.",
-        icon: BarChart3,
-    },
-    {
-        title: "Efficient Growth",
-        description: "Scale your operations without linear cost increases through intelligent automation.",
-        icon: TrendingUp,
-    },
-    {
-        title: "Workflow Automation",
-        description: "Put repetitive manual tasks on autopilot and free up your team for creative work.",
-        icon: Zap,
-    },
+    // {
+    //     title: "Data-driven",
+    //     description: "Turn your raw business data into actionable insights for better decision-making.",
+    //     icon: BarChart3,
+    // },
+    // {
+    //     title: "Efficient Growth",
+    //     description: "Scale your operations without linear cost increases through intelligent automation.",
+    //     icon: TrendingUp,
+    // },
+    // {
+    //     title: "Workflow Automation",
+    //     description: "Put repetitive manual tasks on autopilot and free up your team for creative work.",
+    //     icon: Zap,
+    // },
 ];
 
 export default function Features() {
@@ -44,7 +44,7 @@ export default function Features() {
                 <FadeIn>
                     <div className="text-center mb-16">
                         <h2 className="font-heading text-4xl md:text-5xl font-medium text-foreground mb-4">
-                            AI Automation Services
+                            Who This Is For
                         </h2>
                         <p className="text-muted text-lg max-w-2xl mx-auto">
                             Comprehensive solutions to modernize your business operations

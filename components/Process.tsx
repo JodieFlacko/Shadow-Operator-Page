@@ -90,20 +90,20 @@ export default function Process() {
                 </div>
 
                 {/* Stats Row */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-gray-100 pt-12">
-                    <div className="text-center md:border-r border-gray-100 last:border-0">
+                <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-0 border-t border-gray-100 pt-12">
+                    <div className="text-center md:px-8 md:border-r border-gray-100 last:border-0">
                         <div className="text-3xl font-bold text-gray-900 mb-1">10k+</div>
                         <div className="text-sm text-gray-500 uppercase tracking-wide">
                             Happy users
                         </div>
                     </div>
-                    <div className="text-center md:border-r border-gray-100 last:border-0">
+                    <div className="text-center md:px-8 md:border-r border-gray-100 last:border-0">
                         <div className="text-3xl font-bold text-gray-900 mb-1">250k+</div>
                         <div className="text-sm text-gray-500 uppercase tracking-wide">
                             Total hrs saved
                         </div>
                     </div>
-                    <div className="text-center md:border-r border-gray-100 last:border-0">
+                    <div className="text-center md:px-8 md:border-r border-gray-100 last:border-0">
                         <div className="text-3xl font-bold text-gray-900 mb-1">4.8</div>
                         <div className="text-sm text-gray-500 uppercase tracking-wide">
                             Average Rating

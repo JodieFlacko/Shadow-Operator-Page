@@ -57,12 +57,12 @@ export default function Comparison() {
                             <div className="p-3 bg-purple-100 text-purple-600 rounded-xl">
                                 <Box className="w-8 h-8" />
                             </div>
-                            <h3 className="text-2xl font-bold">Lander OS</h3>
+                            <h3 className="text-2xl font-bold">Prima Studio Media</h3>
                         </div>
 
                         <ul className="space-y-6">
                             {[
-                                "Fast setup with ready AI workflows",
+                                "Sales-Ready demos within the first 60 days of going live",
                                 "Built to grow and adapt with you",
                                 "Real-time, AI-powered analytics",
                                 "Automates tasks, reducing overhead",
