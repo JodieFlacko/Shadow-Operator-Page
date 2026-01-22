@@ -1,32 +1,39 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { Workflow, Rocket, Headphones, BarChart3, TrendingUp, Zap } from "lucide-react";
 import FadeIn from "./FadeIn";
 
 const features = [
     {
         title: "Workflow Assessment",
         description: "We analyze your current processes to identify high-impact automation opportunities.",
+        icon: Workflow,
     },
     {
         title: "Deploy with Confidence",
         description: "Our custom AI systems are built rigorously to ensure reliability and scalability.",
+        icon: Rocket,
     },
     {
         title: "Ongoing Support",
         description: "We don't just launch and leave. We provide continuous support and optimization.",
+        icon: Headphones,
     },
     {
         title: "Data-driven",
         description: "Turn your raw business data into actionable insights for better decision-making.",
+        icon: BarChart3,
     },
     {
         title: "Efficient Growth",
         description: "Scale your operations without linear cost increases through intelligent automation.",
+        icon: TrendingUp,
     },
     {
         title: "Workflow Automation",
         description: "Put repetitive manual tasks on autopilot and free up your team for creative work.",
+        icon: Zap,
     },
 ];
 
@@ -57,11 +64,11 @@ export default function Features() {
     );
 }
 
-function FeatureCard({ title, description }: { title: string; description: string }) {
+function FeatureCard({ title, description, icon: Icon }: { title: string; description: string; icon: any }) {
     return (
         <div className="group h-full p-8 rounded-2xl border border-border bg-white hover:border-accent/40 hover:shadow-lg transition-all duration-300">
-            <div className="w-12 h-12 rounded-lg bg-accent/5 flex items-center justify-center mb-6 group-hover:bg-accent/10 transition-colors">
-                <div className="w-6 h-6 bg-accent rounded-full opacity-20" /> {/* Placeholder icon */}
+            <div className="bg-purple-100 rounded-lg p-3 w-fit mb-4">
+                <Icon className="w-6 h-6 text-purple-600" />
             </div>
             <h3 className="font-heading text-xl font-medium text-foreground mb-3">{title}</h3>
             <p className="text-muted leading-relaxed">{description}</p>

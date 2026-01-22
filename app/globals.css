@@ -40,7 +40,7 @@
     }
   }
 
-  --animate-float: float 6s ease-in-out infinite;
+  --animate-float: float 3s ease-in-out infinite;
 
   @keyframes fade-in-up {
     0% {

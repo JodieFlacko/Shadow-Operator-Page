@@ -1,41 +1,16 @@
 "use client";
 
-import { useRef } from "react";
+
 import { motion } from "framer-motion";
 import { Settings, Sparkles, PieChart, Code } from "lucide-react";
 import Cube from "./3d/Cube";
 import FadeIn from "./FadeIn";
 
 export default function Hero() {
-    const containerRef = useRef<HTMLDivElement>(null);
 
-    const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-        if (!containerRef.current) return;
-
-        const { left, top, width, height } = containerRef.current.getBoundingClientRect();
-        const centerX = left + width / 2;
-        const centerY = top + height / 2;
-
-        // Calculate distance from center
-        const mouseX = e.clientX - centerX;
-        const mouseY = e.clientY - centerY;
-
-        // Apply heavy dampening for subtle effect (max ~5-10deg)
-        const rotateX = (mouseY / 50) * -1; // Invert axis for natural feel
-        const rotateY = mouseX / 50;
-
-        // Apply transformations to the grid container
-        // We start with a base 0 rotation since the Cubes handle their own isometric tilt
-        const grid = document.getElementById('cube-grid');
-        if (grid) {
-            grid.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-        }
-    };
 
     return (
         <section
-            ref={containerRef}
-            onMouseMove={handleMouseMove}
             className="relative px-6 py-12 pt-32 md:p-20 md:pt-40 pb-24 overflow-hidden bg-gradient-to-b from-purple-50 to-white"
         >
             {/* Background Gradients */}
@@ -99,7 +74,7 @@ export default function Hero() {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.7, duration: 0.8 }}
                                 className="w-24 h-24 sm:w-32 sm:h-32 [--cube-size:6rem] sm:[--cube-size:8rem] animate-float"
-                                style={{ animationDelay: "1.5s" }}
+                                style={{ animationDelay: "1.1s" }}
                             >
                                 <Cube>
                                     <Sparkles className="w-10 h-10 text-purple-600 opacity-80" />
@@ -111,7 +86,7 @@ export default function Hero() {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.8, duration: 0.8 }}
                                 className="w-24 h-24 sm:w-32 sm:h-32 [--cube-size:6rem] sm:[--cube-size:8rem] animate-float"
-                                style={{ animationDelay: "3s" }}
+                                style={{ animationDelay: "2.4s" }}
                             >
                                 <Cube>
                                     <Settings className="w-10 h-10 text-purple-600 opacity-80" />
@@ -123,7 +98,7 @@ export default function Hero() {
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.9, duration: 0.8 }}
                                 className="w-24 h-24 sm:w-32 sm:h-32 [--cube-size:6rem] sm:[--cube-size:8rem] animate-float"
-                                style={{ animationDelay: "4.5s" }}
+                                style={{ animationDelay: "0.7s" }}
                             >
                                 <Cube>
                                     <PieChart className="w-10 h-10 text-purple-600 opacity-80" />
@@ -136,21 +111,7 @@ export default function Hero() {
                     </div>
                 </FadeIn>
 
-                {/* Trusted By Fade In */}
-                <FadeIn delay={0.8}>
-                    <div className="mt-20 opacity-0 animate-fade-in-up" style={{ animationFillMode: 'forwards' }}>
-                        <p className="text-sm font-medium text-muted/60 uppercase tracking-widest mb-6">
-                            Trusted by big brands around the world
-                        </p>
-                        {/* Placeholder for logos */}
-                        <div className="flex justify-center gap-8 opacity-50 grayscale">
-                            <div className="h-8 w-24 bg-current/20 rounded"></div>
-                            <div className="h-8 w-24 bg-current/20 rounded"></div>
-                            <div className="h-8 w-24 bg-current/20 rounded"></div>
-                            <div className="h-8 w-24 bg-current/20 rounded"></div>
-                        </div>
-                    </div>
-                </FadeIn>
+
             </div>
         </section>
     );
