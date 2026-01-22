@@ -4,9 +4,9 @@ import { Box, Twitter, Instagram, Facebook, Globe } from "lucide-react";
 
 const socialLinks = [
     { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Instagram, href: "https://www.instagram.com/primastudiomedia/", label: "Instagram" },
     { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Globe, href: "#", label: "Website" },
+    { icon: Globe, href: "https://www.prima-studio-agency.com/", label: "Website" },
 ];
 
 const navLinks = [

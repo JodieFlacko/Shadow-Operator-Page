@@ -23,7 +23,7 @@ export default function Hero() {
                             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-600 opacity-75"></span>
                             <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-600"></span>
                         </span>
-                        <span className="text-xs font-medium text-muted uppercase tracking-wider">Resolve The Invisible Leak in Your Business</span>
+                        <span className="text-xs font-medium text-muted uppercase tracking-wider">Stop Leaving Money on the Table</span>
                     </div>
                 </FadeIn>
 
