@@ -13,10 +13,10 @@ export default function Process() {
                         PROCESS
                     </span>
                     <h2 className="text-4xl font-bold tracking-tight text-gray-900 mb-4">
-                        Process Is Performance
+                        From Chaos to Cash Flow
                     </h2>
                     <p className="text-lg text-gray-600">
-                        Our streamlined approach ensures efficiency and quality at every step.
+                        A proven 3-step framework to turn your audience into a self-sustaining business.
                     </p>
                 </div>
 
@@ -33,11 +33,10 @@ export default function Process() {
                             </span>
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-3">
-                            Workflow Assessment
+                            The Opportunity Audit
                         </h3>
                         <p className="text-gray-600 mb-6 leading-relaxed">
-                            We begin by examining your existing workflows to identify
-                            bottlenecks and opportunities for automation.
+                            We start by deep-diving into your current analytics and audience sentiment to identify exactly where you are leaving money on the table—and how to fix it immediately.
                         </p>
                         <span className="inline-block px-3 py-1 text-xs font-medium text-purple-700 bg-purple-50 rounded-full">
                             Step 1
@@ -55,11 +54,10 @@ export default function Process() {
                             </span>
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-3">
-                            Deploy with Confidence
+                            The Infrastructure Build
                         </h3>
                         <p className="text-gray-600 mb-6 leading-relaxed">
-                            Our team develops custom AI systems tailored to your needs and
-                            deploys them with zero downtime.
+                            We install the "Shadow Systems"—the email flows, community management protocols, and sales automations—that allow your business to run without your constant input.
                         </p>
                         <span className="inline-block px-3 py-1 text-xs font-medium text-purple-700 bg-purple-50 rounded-full">
                             Step 2
@@ -77,11 +75,10 @@ export default function Process() {
                             </span>
                         </div>
                         <h3 className="text-xl font-bold text-gray-900 mb-3">
-                            Ongoing Support
+                            Scale & Optimization
                         </h3>
                         <p className="text-gray-600 mb-6 leading-relaxed">
-                            After deployment, we provide support and monitoring to ensure your
-                            system continues to perform optimally.
+                            Once the engine is running, we act as your operational partner, tweaking the funnels and managing the backend to ensure revenue scales as your audience grows.
                         </p>
                         <span className="inline-block px-3 py-1 text-xs font-medium text-purple-700 bg-purple-50 rounded-full">
                             Step 3

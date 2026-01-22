@@ -20,20 +20,20 @@ export default function Contact() {
                             {/* Left Column: Info */}
                             <div className="flex flex-col justify-center">
                                 <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-8">
-                                    Get in touch with Us
+                                    Apply for Partnership
                                 </h2>
 
                                 <ul className="space-y-6 mb-12">
                                     <li className="flex items-start gap-3">
                                         <Sparkles className="w-6 h-6 text-purple-600 shrink-0 mt-1" />
                                         <p className="text-lg text-muted">
-                                            <span className="font-semibold text-foreground">Effortless Assistance:</span> Connect with our team anytime
+                                            <span className="font-semibold text-foreground">Zero Financial Risk:</span> We invest our time and resources. We only get paid when you profit.
                                         </p>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <Sparkles className="w-6 h-6 text-purple-600 shrink-0 mt-1" />
                                         <p className="text-lg text-muted">
-                                            <span className="font-semibold text-foreground">Book a Demo Today:</span> Experience our platform in action
+                                            <span className="font-semibold text-foreground">Selective Enrollment:</span> Because we work deeply with each partner, we only accept 3 new creators per quarter.
                                         </p>
                                     </li>
                                 </ul>
@@ -44,10 +44,10 @@ export default function Contact() {
                                             <Mail className="w-6 h-6" />
                                         </div>
                                         <div>
-                                            <h3 className="font-heading font-semibold text-xl mb-1">Reach Out to Us</h3>
-                                            <p className="text-sm text-muted mb-2">Need assistance? Drop us a message anytime.</p>
+                                            <h3 className="font-heading font-semibold text-xl mb-1">Partnership Inquiries</h3>
+                                            <p className="text-sm text-muted mb-2">Have questions about the profit-share model?</p>
                                             <a href="mailto:landeros@email.com" className="text-sm font-medium text-purple-600 hover:text-purple-700 underline underline-offset-4">
-                                                landeros@email.com
+                                                info@prima-studio-agency.com
                                             </a>
                                         </div>
                                     </div>
@@ -57,10 +57,10 @@ export default function Contact() {
                                             <Phone className="w-6 h-6" />
                                         </div>
                                         <div>
-                                            <h3 className="font-heading font-semibold text-xl mb-1">Call Us</h3>
-                                            <p className="text-sm text-muted mb-2">Need help? Give us a call— we're here for you.</p>
+                                            <h3 className="font-heading font-semibold text-xl mb-1">Strategy Desk</h3>
+                                            <p className="text-sm text-muted mb-2">Urgent operational questions.</p>
                                             <a href="tel:+1234567890" className="text-sm font-medium text-purple-600 hover:text-purple-700 underline underline-offset-4">
-                                                +1234567890
+                                                +393281736685
                                             </a>
                                         </div>
                                     </div>

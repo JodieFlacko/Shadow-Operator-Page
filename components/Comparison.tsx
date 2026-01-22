@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Layers, Check, X, ArrowRightLeft } from "lucide-react";
+import { Layers, Check, X, ArrowRightLeft } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Comparison() {
@@ -54,23 +54,25 @@ export default function Comparison() {
                         className="group relative bg-white/50 backdrop-blur-sm rounded-3xl p-8 border border-gray-100 hover:border-purple-200 transition-colors duration-300"
                     >
                         <div className="flex items-center gap-4 mb-8">
-                            <div className="p-3 bg-purple-100 text-purple-600 rounded-xl">
-                                <Box className="w-8 h-8" />
-                            </div>
+                            <img
+                                src="/logo.png"
+                                alt="Prima Studio"
+                                className="w-10 h-10 object-contain"
+                            />
                             <h3 className="text-2xl font-bold">Prima Studio Media</h3>
                         </div>
 
                         <ul className="space-y-6">
                             {[
-                                "Sales-Ready demos within the first 60 days of going live",
-                                "Built to grow and adapt with you",
-                                "Real-time, AI-powered analytics",
-                                "Automates tasks, reducing overhead",
-                                "Expert support + AI guidance"
+                                "We build the commercial framework. You own the system",
+                                "We built a predictable revenue engine",
+                                "Sponsorships became bonus income",
+                                "Runs behind the scenes",
+                                "Expert support"
                             ].map((item, i) => (
-                                <li key={i} className="flex items-start gap-3">
-                                    <div className="mt-1 p-0.5 rounded-full bg-green-100 text-green-600">
-                                        <Check className="w-4 h-4" />
+                                <li key={i} className="flex items-start gap-3 min-h-[52px]">
+                                    <div className="mt-0.5 w-5 h-5 flex-shrink-0 flex items-center justify-center rounded-full bg-green-100 text-green-600">
+                                        <Check className="w-3.5 h-3.5" />
                                     </div>
                                     <span className="font-medium text-gray-900">{item}</span>
                                 </li>
@@ -87,23 +89,21 @@ export default function Comparison() {
                         className="relative bg-white/50 backdrop-blur-sm rounded-3xl p-8 border border-gray-100"
                     >
                         <div className="flex items-center gap-4 mb-8">
-                            <div className="p-3 bg-orange-100 text-orange-600 rounded-xl">
-                                <Layers className="w-8 h-8" />
-                            </div>
+                            <Layers className="w-10 h-10 text-orange-600" />
                             <h3 className="text-2xl font-bold text-gray-900">Others</h3>
                         </div>
 
                         <ul className="space-y-6">
                             {[
-                                "Slower execution and manual setup",
-                                "Requires manual updates as you scale",
-                                "Limited or delayed reporting",
-                                "Higher labor costs, less automation",
-                                "Generic support or none at all"
+                                "It's not a model. It's a lottery ticket",
+                                "Every month, you're starting from scratch",
+                                "Chasing new deals",
+                                "Hoping your engagement stays high enough to stay relevant",
+                                "Negotiating rates"
                             ].map((item, i) => (
-                                <li key={i} className="flex items-start gap-3">
-                                    <div className="mt-1 text-gray-400">
-                                        <X className="w-5 h-5" />
+                                <li key={i} className="flex items-start gap-3 min-h-[52px]">
+                                    <div className="mt-0.5 w-5 h-5 flex-shrink-0 flex items-center justify-center text-gray-400">
+                                        <X className="w-3.5 h-3.5" />
                                     </div>
                                     <span className="text-gray-500">{item}</span>
                                 </li>

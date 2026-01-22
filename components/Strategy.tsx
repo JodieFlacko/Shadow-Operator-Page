@@ -12,7 +12,7 @@ export default function Strategy() {
                 <div className="flex items-center gap-6 mb-12">
                     <div className="h-[1px] bg-gray-200 flex-1" />
                     <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground">
-                        Strategy & Content Creation
+                        The Monetization Engine
                     </h2>
                     <div className="h-[1px] bg-gray-200 flex-1" />
                 </div>
@@ -22,9 +22,9 @@ export default function Strategy() {
                     {/* Card 1: AI Consulting */}
                     <div className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col h-full hover:shadow-md transition-shadow duration-300">
                         <div className="mb-6">
-                            <h3 className="text-lg font-bold text-foreground">AI Consulting & Strategies</h3>
+                            <h3 className="text-lg font-bold text-foreground">High-Ticket Offer Architecture</h3>
                             <p className="text-muted-foreground text-sm mt-2">
-                                We design custom AI strategies that drive growth.
+                                We don't just "strategize." We analyze your audience data to build, price, and launch high-ticket offers that maximize Revenue Per Follower (RPF).
                             </p>
                         </div>
 
@@ -51,9 +51,9 @@ export default function Strategy() {
                     {/* Card 2: Content Creation */}
                     <div className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col h-full hover:shadow-md transition-shadow duration-300">
                         <div className="mb-6">
-                            <h3 className="text-lg font-bold text-foreground">Social Media Content Creation</h3>
+                            <h3 className="text-lg font-bold text-foreground">Automated Funnel Infrastructure</h3>
                             <p className="text-muted-foreground text-sm mt-2">
-                                Leverage AI to create engaging, personalized content.
+                                Turn passive likes into active buyers. We build the backend email flows, landing pages, and retargeting systems that sell while you sleep.
                             </p>
                         </div>
 
@@ -88,11 +88,11 @@ export default function Strategy() {
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                     <button className="group flex items-center gap-2 px-8 py-3 rounded-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white font-medium hover:opacity-90 transition-all shadow-lg shadow-purple-500/20 active:scale-95">
                         <Phone size={18} className="group-hover:rotate-12 transition-transform" />
-                        Book A Free Call Now
+                        Get Your Audit
                     </button>
 
                     <button className="flex items-center gap-2 px-8 py-3 rounded-full bg-[#1a0b2e] text-white font-medium hover:bg-[#2a1b3e] transition-colors shadow-md active:scale-95">
-                        Contact Sales Now
+                        How It Works
                         <ArrowRight size={18} />
                     </button>
                 </div>

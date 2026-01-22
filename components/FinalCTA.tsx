@@ -9,29 +9,29 @@ export default function FinalCTA() {
 
                 <div className="relative z-10 flex flex-col items-center">
                     <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-                        What you still waiting!!
+                        You Create Content. <br /> We Build the Empire.
                     </h2>
                     <p className="text-gray-600 max-w-2xl text-lg">
-                        Ready to unlock the full potential of AI for your business? Let's build intelligent solutions that save time, cut costs, and accelerate growth.
+                        Stop leaving money on the table. We build the backend infrastructure, high-ticket offers, and monetization funnels your audience is begging for—so you can focus on being the face of the brand.
                     </p>
 
                     <div className="flex flex-wrap justify-center gap-4 mt-8 mb-8">
                         <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-lg text-sm font-medium text-purple-900 border border-white/50">
                             <Wallet className="w-4 h-4" />
-                            <span>100% safe payment</span>
+                            <span>100% Done-For-You</span>
                         </div>
                         <div className="flex items-center gap-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-lg text-sm font-medium text-purple-900 border border-white/50">
                             <Users className="w-4 h-4" />
-                            <span>10k+ people trust us</span>
+                            <span>Trusted by Top 1% Creators</span>
                         </div>
                     </div>
 
                     <div className="flex flex-col sm:flex-row gap-4">
                         <button className="bg-purple-700 hover:bg-purple-800 text-white rounded-full px-8 py-3 font-medium transition-all shadow-lg ring-4 ring-purple-100/50 hover:ring-purple-200">
-                            Get Started for Free
+                            Get Your Audit
                         </button>
                         <button className="bg-purple-800 hover:bg-purple-900 text-white rounded-full px-8 py-3 font-medium transition-colors shadow-lg">
-                            Contact Sales Now
+                            How It Works
                         </button>
                     </div>
                 </div>

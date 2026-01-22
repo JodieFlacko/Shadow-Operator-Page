@@ -15,8 +15,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Lander OS - AI Agency",
-  description: "Lead your business with AI-Automation",
+  title: "Prima Studio Media",
+  description: "We deploy the outreach process.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",

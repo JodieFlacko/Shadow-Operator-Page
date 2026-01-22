@@ -30,7 +30,7 @@ export default function Footer() {
                         <div className="relative h-[32px] w-auto">
                             <Image
                                 src="/logo.png"
-                                alt="Lander OS Logo"
+                                alt="Prima Studio Logo"
                                 width={0}
                                 height={0}
                                 sizes="100vw"
@@ -38,7 +38,7 @@ export default function Footer() {
                             />
                         </div>
                         <span className="font-heading font-bold text-xl tracking-tight text-gray-900">
-                            Lander OS
+                            Prima Studio Media
                         </span>
                     </Link>
 
@@ -75,7 +75,7 @@ export default function Footer() {
 
                 {/* Bottom Row: Copyright */}
                 <div className="border-t border-gray-200 pt-8 flex justify-center md:justify-start">
-                    <p className="text-sm text-gray-500">© 2025 LanderOS</p>
+                    <p className="text-sm text-gray-500">© 2026 PrimaStudioMedia</p>
                 </div>
             </div>
         </footer>

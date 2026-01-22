@@ -53,47 +53,57 @@ const FAQItem = ({ question, answer, isOpen, onClick }: FAQItemProps) => {
 
 const leftQuestions = [
     {
-        question: "What is included in the Starter plan?",
+        question: "How long does it take to see results?",
         answer:
-            "The Starter plan includes access to basic analytics, up to 1,000 monthly active users, and email support. It's designed for individuals and small teams just getting started with our platform.",
+            "Most clients see qualified demos within 60 days of pipeline installation. The system is built to deliver fast, measurable results.",
     },
     {
-        question: "Can I switch plans later?",
+        question: "Do I need a sales team to make this work?",
         answer:
-            "Yes, you can upgrade or downgrade your plan at any time. Changes will be applied to your next billing cycle, and prorated credits will be calculated automatically.",
+            "No. We include the SDR-in-a-Box playbook that shows you exactly how to hire and manage your first sales development rep.",
     },
     {
-        question: "How secure is my data?",
+        question: "What if I don't have a large audience?",
         answer:
-            "We take security seriously. Your data is encrypted at rest and in transit using industry-standard protocols. We perform regular security audits and are SOC 2 Type II compliant.",
+            "The system works with audiences as small as 5,000 engaged followers. It's about quality of attention, not just quantity of followers.",
     },
     {
-        question: "Can I integrate this platform with other tools?",
+        question: "Will this feel pushy or damage my brand?",
         answer:
-            "Absolutely. We offer a comprehensive API and native integrations with popular tools like Slack, Jira, GitHub, and Notion to streamline your workflow.",
+            "No. The quiz funnel operates privately, away from your public feed. Your audience opts in voluntarily, preserving your authentic brand voice.",
+    },
+    {
+        question: "What happens if I don't get 15 qualified demos in 60 days?",
+        answer:
+            "We keep working for free until you hit that benchmark. Your success is guaranteed, or we don't stop building.",
     },
 ];
 
 const rightQuestions = [
     {
-        question: "Do you offer a free trial?",
+        question: "Is this just another course I have to implement myself?",
         answer:
-            "Yes, we offer a 14-day free trial on all paid plans. No credit card is required to sign up, so you can explore the features risk-free.",
+            "No. This is done-for-you installation. We build the quiz, scoring system, emails, and dashboard. You focus on your content.",
     },
     {
-        question: "What payment methods do you accept?",
+        question: "How much technical knowledge do I need?",
         answer:
-            "We accept all major credit cards including Visa, Mastercard, and American Express. For Enterprise plans, we also support invoicing and bank transfers.",
+            "Zero. We handle all the technical setup and integration. You just need to provide your expertise and approve the messaging.",
     },
     {
-        question: "How does the 2% donation work?",
+        question: "Can I use this if I already have a product or course?",
         answer:
-            "For every transaction processed on our platform, we donate 2% of our profit to climate change initiatives and open source projects that align with our sustainability goals.",
+            "Yes. The pipeline works with any existing offer. We simply install the qualification system between your audience and your sales process.",
     },
     {
-        question: "What makes your platform different?",
+        question: "What if my audience is in a different niche than wellness?",
         answer:
-            "Unlike other solutions, we focus on developer experience first. Our platform is built for speed, reliability, and ease of use, with a zero-config setup that gets you running in minutes.",
+            "The system works for any creator or info business with an engaged audience. We customize the quiz and messaging to your specific market.",
+    },
+    {
+        question: "How is this different from running Facebook ads?",
+        answer:
+            "This targets your existing warm audience, not cold traffic. You're harvesting intent that already exists, not paying to create new attention.",
     },
 ];
 
@@ -160,10 +170,10 @@ export default function FAQ() {
                         <span>
                             Feel free to mail us for any enquiries :{" "}
                             <a
-                                href="mailto:landeros@email.com"
+                                href="mailto:info@prima-studio-agency.com"
                                 className="font-medium text-foreground hover:text-accent"
                             >
-                                landeros@email.com
+                                info@prima-studio-agency.com
                             </a>
                         </span>
                     </div>

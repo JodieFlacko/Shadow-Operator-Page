@@ -5,37 +5,37 @@ import FadeIn from "./FadeIn";
 
 const tiers = [
     {
-        name: "Starter",
-        price: "$750",
-        frequency: "/month",
-        description: "Perfect for small businesses starting with AI.",
-        features: ["Basic AI tools", "Limited automation", "Real-time reporting", "Basic chatbot"],
+        name: "The Launchpad",
+        price: "$0",
+        frequency: " (Rev-Share)",
+        description: "We identify your best product opportunity, build the offer, and launch it to your audience.",
+        features: ["Audience Analysis", "Offer Creation", "Landing Page Build", "Launch Email Campaign"],
         popular: false,
     },
     {
-        name: "Pro",
-        price: "$1700",
-        frequency: "/month",
-        description: "Advanced automation for growing companies.",
+        name: "Growth Partner",
+        price: "$0",
+        frequency: " (Rev-Share)",
+        description: "We take over your backend operations, optimizing funnels and emails to maximize Revenue Per Follower.",
         features: [
-            "Everything in Starter",
-            "3rd-party integrations",
-            "Advanced analytics",
-            "Premium chatbot",
-            "Cross-platform",
+            "Everything in Launchpad",
+            "Funnel Optimization",
+            "Upsell & Cross-sell Systems",
+            "Community Management",
         ],
         popular: true,
     },
     {
-        name: "Enterprise",
-        price: "$4700",
-        frequency: "/month",
-        description: "Full-scale custom solutions for large organizations.",
+        name: "The Empire",
+        price: "$0",
+        frequency: " (Rev-Share)",
+        description: "We act as your fractional COO, building a full-scale business infrastructure intended for long-term scale or exit.",
         features: [
-            "Everything in Pro",
-            "Dedicated growth manager",
-            "Custom reports",
-            "Fully customized AI solutions",
+            "Full Operational Control",
+            "Team Hiring & Management",
+            "New Product Lines",
+            "Brand Deal Negotiation",
+            "Quarterly Board Strategy"
         ],
         popular: false,
     },
@@ -48,10 +48,10 @@ export default function Pricing() {
                 <FadeIn>
                     <div className="text-center mb-16">
                         <h2 className="font-heading text-4xl md:text-5xl font-medium text-foreground mb-4">
-                            Simple Pricing
+                            We Invest In You
                         </h2>
                         <p className="text-muted text-lg max-w-2xl mx-auto">
-                            Choose the specific plan that fits your business needs
+                            No monthly fees. No expensive retainers. We partner with select creators on a pure performance basis. We cover the operational costs; we share the upside.
                         </p>
                     </div>
                 </FadeIn>
@@ -61,8 +61,8 @@ export default function Pricing() {
                         <FadeIn key={tier.name} delay={index * 0.1} className="h-full">
                             <div
                                 className={`relative p-8 rounded-2xl bg-white border transition-all duration-300 hover:shadow-xl h-full flex flex-col ${tier.popular
-                                        ? "border-accent shadow-lg scale-105 z-10"
-                                        : "border-border hover:border-accent/30"
+                                    ? "border-accent shadow-lg scale-105 z-10"
+                                    : "border-border hover:border-accent/30"
                                     }`}
                             >
                                 {tier.popular && (
@@ -91,11 +91,11 @@ export default function Pricing() {
 
                                 <button
                                     className={`w-full py-3 rounded-xl font-medium transition-all ${tier.popular
-                                            ? "bg-accent text-white hover:bg-accent-hover shadow-md hover:shadow-lg"
-                                            : "bg-white border-2 border-border text-foreground hover:border-accent hover:text-accent"
+                                        ? "bg-accent text-white hover:bg-accent-hover shadow-md hover:shadow-lg"
+                                        : "bg-white border-2 border-border text-foreground hover:border-accent hover:text-accent"
                                         }`}
                                 >
-                                    Get Started
+                                    Apply for Launch
                                 </button>
                             </div>
                         </FadeIn>
