@@ -47,7 +47,7 @@ export default function Pricing() {
             <div className="max-w-7xl mx-auto px-6">
                 <FadeIn>
                     <div className="text-center mb-16">
-                        <h2 className="font-heading text-4xl md:text-5xl font-medium text-foreground mb-4">
+                        <h2 className="font-heading text-4xl md:text-5xl font-medium tracking-tight text-foreground mb-4">
                             We Invest In You
                         </h2>
                         <p className="text-muted text-lg max-w-2xl mx-auto">

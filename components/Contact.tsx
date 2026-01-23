@@ -16,14 +16,14 @@ export default function Contact() {
             <div className="container mx-auto px-4 relative z-10">
                 <FadeIn>
                     <div className="max-w-6xl mx-auto bg-white/40 backdrop-blur-xl rounded-[3rem] shadow-2xl border border-white/50 p-8 md:p-12 overflow-hidden">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-20">
                             {/* Left Column: Info */}
                             <div className="flex flex-col justify-center">
-                                <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-8">
+                                <h2 className="font-heading text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-6">
                                     Apply for Partnership
                                 </h2>
 
-                                <ul className="space-y-6 mb-12">
+                                <ul className="space-y-6 mb-6">
                                     <li className="flex items-start gap-3">
                                         <Sparkles className="w-6 h-6 text-purple-600 shrink-0 mt-1" />
                                         <p className="text-lg text-muted">
@@ -46,7 +46,7 @@ export default function Contact() {
                                         <div>
                                             <h3 className="font-heading font-semibold text-xl mb-1">Partnership Inquiries</h3>
                                             <p className="text-sm text-muted mb-2">Have questions about the profit-share model?</p>
-                                            <a href="mailto:landeros@email.com" className="text-sm font-medium text-purple-600 hover:text-purple-700 underline underline-offset-4">
+                                            <a href="mailto:info@prima-studio-agency.com" className="text-sm font-medium text-purple-600 hover:text-purple-700 underline underline-offset-4">
                                                 info@prima-studio-agency.com
                                             </a>
                                         </div>
@@ -76,7 +76,7 @@ export default function Contact() {
                                             type="text"
                                             id="name"
                                             placeholder="Jane Smith"
-                                            className="w-full px-4 py-3 rounded-xl bg-white border-0 shadow-sm focus:ring-2 focus:ring-purple-600/20 focus:outline-none transition-all placeholder:text-muted/40"
+                                            className="w-full px-4 py-3 rounded-xl bg-white border-0 shadow-sm focus:ring-2 focus:ring-purple-600/20 focus:outline-none transition-all placeholder:text-muted/40 text-base"
                                         />
                                     </div>
 
@@ -86,7 +86,7 @@ export default function Contact() {
                                             type="email"
                                             id="email"
                                             placeholder="jane@framer.com"
-                                            className="w-full px-4 py-3 rounded-xl bg-white border-0 shadow-sm focus:ring-2 focus:ring-purple-600/20 focus:outline-none transition-all placeholder:text-muted/40"
+                                            className="w-full px-4 py-3 rounded-xl bg-white border-0 shadow-sm focus:ring-2 focus:ring-purple-600/20 focus:outline-none transition-all placeholder:text-muted/40 text-base"
                                         />
                                     </div>
 
@@ -96,7 +96,7 @@ export default function Contact() {
                                             type="text"
                                             id="subject"
                                             placeholder="Subject"
-                                            className="w-full px-4 py-3 rounded-xl bg-white border-0 shadow-sm focus:ring-2 focus:ring-purple-600/20 focus:outline-none transition-all placeholder:text-muted/40"
+                                            className="w-full px-4 py-3 rounded-xl bg-white border-0 shadow-sm focus:ring-2 focus:ring-purple-600/20 focus:outline-none transition-all placeholder:text-muted/40 text-base"
                                         />
                                     </div>
 
@@ -105,13 +105,13 @@ export default function Contact() {
                                         <textarea
                                             id="message"
                                             placeholder="message goes here..."
-                                            className="w-full px-4 py-3 rounded-xl bg-white border-0 shadow-sm focus:ring-2 focus:ring-purple-600/20 focus:outline-none transition-all h-32 resize-none placeholder:text-muted/40"
+                                            className="w-full px-4 py-3 rounded-xl bg-white border-0 shadow-sm focus:ring-2 focus:ring-purple-600/20 focus:outline-none transition-all h-32 resize-none placeholder:text-muted/40 text-base"
                                         ></textarea>
                                     </div>
 
                                     <button
                                         type="submit"
-                                        className="w-full py-4 rounded-xl bg-purple-700 hover:bg-purple-800 text-white font-medium shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-200"
+                                        className="w-full py-4 rounded-xl bg-purple-700 hover:bg-purple-800 text-white font-medium shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-95 transition-all duration-200"
                                     >
                                         Submit
                                     </button>

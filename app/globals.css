@@ -17,8 +17,8 @@
   --color-accent-hover: var(--accent-hover);
   --color-border: var(--border);
 
-  --font-sans: var(--font-inter);
-  --font-heading: var(--font-outfit);
+  --font-sans: var(--font-jakarta);
+  --font-heading: var(--font-jakarta);
 
   --animate-scroll: scroll 40s linear infinite;
 

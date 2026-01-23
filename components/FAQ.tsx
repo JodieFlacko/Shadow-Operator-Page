@@ -117,10 +117,10 @@ export default function FAQ() {
     };
 
     return (
-        <section className="relative overflow-hidden py-24 sm:py-32">
+        <section className="relative overflow-hidden py-12 md:py-24">
             <div className="container relative z-10 mx-auto px-4 md:px-6">
                 {/* Header Grid */}
-                <div className="mb-16 grid grid-cols-1 items-end gap-y-6 md:grid-cols-[auto_1fr_auto] md:gap-x-12">
+                <div className="mb-10 md:mb-16 grid grid-cols-1 items-end gap-y-6 md:grid-cols-[auto_1fr_auto] md:gap-x-12">
                     <h2 className="font-heading text-3xl font-bold tracking-tight text-foreground sm:text-4xl md:text-5xl">
                         Questions answered
                     </h2>

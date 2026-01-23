@@ -39,11 +39,11 @@ const features = [
 
 export default function Features() {
     return (
-        <section id="services" className="py-24 bg-white relative">
+        <section id="services" className="py-12 md:py-24 bg-white relative">
             <div className="max-w-7xl mx-auto px-6">
                 <FadeIn>
-                    <div className="text-center mb-16">
-                        <h2 className="font-heading text-4xl md:text-5xl font-medium text-foreground mb-4">
+                    <div className="text-center mb-10 md:mb-16">
+                        <h2 className="font-heading text-4xl md:text-5xl font-medium tracking-tight text-foreground mb-4">
                             Who This Is For
                         </h2>
                         <p className="text-muted text-lg max-w-2xl mx-auto">

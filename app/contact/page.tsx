@@ -2,7 +2,7 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Contact Us - Lander OS",
+    title: "Contact Us - Prima Studio Media",
     description: "Get in touch with our team for assistance or to book a demo.",
 };
 

@@ -3,22 +3,22 @@ import { ArrowRight, Twitter, Facebook, Image as ImageIcon, FileVideo, Phone } f
 
 export default function Strategy() {
     return (
-        <section className="py-24 relative overflow-hidden">
+        <section className="py-12 md:py-24 relative overflow-hidden">
             {/* Background Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[500px] bg-purple-500/5 blur-[120px] rounded-full -z-10" />
 
             <div className="container mx-auto px-4 md:px-6">
                 {/* Header */}
-                <div className="flex items-center gap-6 mb-12">
+                <div className="flex items-center gap-6 mb-8 md:mb-12">
                     <div className="h-[1px] bg-gray-200 flex-1" />
-                    <h2 className="text-2xl md:text-3xl font-bold text-center text-foreground">
+                    <h2 className="text-2xl md:text-3xl font-bold tracking-tight text-center text-foreground">
                         The Monetization Engine
                     </h2>
                     <div className="h-[1px] bg-gray-200 flex-1" />
                 </div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 md:mb-12">
                     {/* Card 1: AI Consulting */}
                     <div className="bg-white rounded-3xl p-8 border border-gray-100 shadow-sm flex flex-col h-full hover:shadow-md transition-shadow duration-300">
                         <div className="mb-6">

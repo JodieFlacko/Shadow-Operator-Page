@@ -2,13 +2,13 @@ import { Share2, Rocket, Headphones } from "lucide-react";
 
 export default function Process() {
     return (
-        <section className="relative py-24 overflow-hidden">
+        <section className="relative py-12 md:py-24 overflow-hidden">
             {/* Background Gradient Blob */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-purple-200 blur-3xl opacity-30 rounded-full -z-10 pointer-events-none" />
 
             <div className="container mx-auto px-4">
                 {/* Header */}
-                <div className="text-center max-w-2xl mx-auto mb-16">
+                <div className="text-center max-w-2xl mx-auto mb-10 md:mb-16">
                     <span className="inline-block px-3 py-1 mb-4 text-xs font-medium tracking-wider text-gray-900 uppercase bg-gray-100 rounded-full">
                         PROCESS
                     </span>
@@ -21,7 +21,7 @@ export default function Process() {
                 </div>
 
                 {/* Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 md:mb-20">
                     {/* Card 1 */}
                     <div className="group relative bg-white rounded-2xl border border-purple-100 p-8 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
                         <div className="flex justify-between items-start mb-6">

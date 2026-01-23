@@ -11,7 +11,7 @@ export default function Hero() {
 
     return (
         <section
-            className="relative px-6 py-12 pt-32 md:p-20 md:pt-40 pb-24 overflow-hidden bg-gradient-to-b from-purple-50 to-white"
+            className="relative px-6 py-12 pt-12 md:p-20 md:pt-40 pb-12 md:pb-24 overflow-hidden bg-gradient-to-b from-purple-50 to-white"
         >
             {/* Background Gradients */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-[radial-gradient(ellipse_at_top,var(--color-accent)_0%,transparent_50%)] opacity-10 blur-3xl -z-10" />
@@ -40,8 +40,8 @@ export default function Hero() {
                 </FadeIn>
 
                 <FadeIn delay={0.4}>
-                    <div className="flex flex-col sm:flex-row items-center gap-4 justify-center mb-16">
-                        <button className="h-12 px-8 rounded-full bg-purple-600 hover:bg-purple-700 text-white font-medium text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                    <div className="flex flex-col sm:flex-row items-center gap-4 justify-center mb-10 md:mb-16">
+                        <button className="h-12 px-8 rounded-full bg-purple-600 hover:bg-purple-700 text-white font-medium text-lg shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-95 transition-all duration-300 cursor-pointer">
                             See How It Works
                         </button>
                     </div>

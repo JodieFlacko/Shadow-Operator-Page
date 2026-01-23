@@ -20,7 +20,7 @@ const navLinks = [
 
 export default function Footer() {
     return (
-        <footer className="w-full pt-20 pb-10 bg-purple-50/30">
+        <footer className="w-full pt-20 pb-[calc(2.5rem+env(safe-area-inset-bottom))] bg-purple-50/30">
             <div className="max-w-5xl mx-auto px-4 md:px-0 flex flex-col">
                 {/* Top Row: Brand & Socials */}
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6">
