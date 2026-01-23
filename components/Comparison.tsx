@@ -65,7 +65,7 @@ export default function Comparison() {
                         <ul className="space-y-3">
                             {[
                                 "We build the commercial framework. You own the system",
-                                "We built a predictable revenue engine",
+                                "We build a predictable revenue engine",
                                 "Sponsorships became bonus income",
                                 "Runs behind the scenes",
                                 "Expert support"

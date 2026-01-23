@@ -1,18 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Box, Twitter, Instagram, Facebook, Globe } from "lucide-react";
+import { Box, Twitter, Instagram, Facebook } from "lucide-react";
 
 const socialLinks = [
     { icon: Twitter, href: "#", label: "Twitter" },
     { icon: Instagram, href: "https://www.instagram.com/primastudiomedia/", label: "Instagram" },
     { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Globe, href: "https://www.prima-studio-agency.com/", label: "Website" },
 ];
 
 const navLinks = [
     { label: "Product", href: "#" },
     { label: "Integrations", href: "#" },
-    { label: "Success Stories", href: "#" },
     { label: "Contact Us", href: "#" },
     { label: "Pricing", href: "#" },
     { label: "Careers", href: "#" },

@@ -14,7 +14,6 @@ export default function Navbar() {
         { name: "Services", href: "/#services" },
         { name: "Reviews", href: "/#reviews" },
         { name: "Pricing", href: "/#pricing" },
-        { name: "Projects", href: "/#projects" },
         { name: "Contact Us", href: "/contact" },
     ];
 
@@ -53,7 +52,7 @@ export default function Navbar() {
     return (
         <>
             <header className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-full max-w-5xl px-4">
-                <div className="flex items-center justify-between w-full px-6 py-3 rounded-full shadow-lg backdrop-blur-2xl bg-white/30 border border-white/50">
+                <div className="flex items-center justify-between w-full px-6 py-3 rounded-full shadow-lg backdrop-blur-md bg-white/80 border border-white/40">
                     {/* Logo */}
                     <Link
                         href="/"
@@ -93,7 +92,7 @@ export default function Navbar() {
                     {/* Desktop CTA */}
                     <div className="hidden lg:block">
                         <Link
-                            href="/"
+                            href="/contact"
                             className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2.5 rounded-full text-sm font-medium transition-colors shadow-md active:scale-95 transition-transform"
                         >
                             Get Started
@@ -122,17 +121,13 @@ export default function Navbar() {
 
             {/* Mobile Menu Overlay */}
             <div
-                className={`fixed top-0 inset-x-0 z-50 h-auto bg-white/30 backdrop-blur-2xl border border-white/50 rounded-b-[3rem] shadow-2xl pb-12 transition-all duration-300 ${isMenuOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-10 pointer-events-none"
+                className={`fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-xl border-b border-white/20 shadow-2xl rounded-b-[2.5rem] flex flex-col transition-all duration-300 ${isMenuOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
                     }`}
             >
-                {/* Mobile Menu Header */}
-                <div className="flex items-center justify-between px-6 py-6">
+                {/* Header Row */}
+                <div className="flex items-center justify-between px-6 py-5 w-full max-w-5xl mx-auto">
                     {/* Logo */}
-                    <Link
-                        href="/"
-                        onClick={handleLogoClick}
-                        className="flex items-center gap-2 cursor-pointer"
-                    >
+                    <div className="flex items-center gap-2">
                         <div className="relative h-[40px] w-auto mr-2">
                             <Image
                                 src="/logo.png"
@@ -147,7 +142,7 @@ export default function Navbar() {
                         <span className="font-heading font-bold text-xl tracking-tight text-foreground hidden sm:block">
                             Prima Studio Media
                         </span>
-                    </Link>
+                    </div>
 
                     {/* Close Button */}
                     <button
@@ -156,40 +151,34 @@ export default function Navbar() {
                         aria-label="Close menu"
                     >
                         <div className="flex flex-col justify-center items-center gap-[6px] w-6 h-6">
-                            <span
-                                className={`bg-gray-800 h-[2px] w-full rounded-full transition-all duration-300 ease-in-out origin-center rotate-45 translate-y-[4px]`}
-                            />
-                            <span
-                                className={`bg-gray-800 h-[2px] w-full rounded-full transition-all duration-300 ease-in-out origin-center -rotate-45 -translate-y-[4px]`}
-                            />
+                            <span className="bg-gray-900 h-[2px] w-full rounded-full rotate-45 translate-y-[4px]" />
+                            <span className="bg-gray-900 h-[2px] w-full rounded-full -rotate-45 -translate-y-[4px]" />
                         </div>
                     </button>
                 </div>
 
-                {/* Nav Links */}
-                <nav className="flex flex-col items-center gap-6 mt-4">
+                {/* Links */}
+                <nav className="flex flex-col items-center gap-5 pb-8">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
                             href={link.href}
                             onClick={(e) => handleScroll(e, link.href)}
-                            className="text-2xl font-medium text-foreground hover:text-purple-600 transition-colors"
+                            className="text-lg font-medium text-gray-900 hover:text-purple-600 transition-colors"
                         >
                             {link.name}
                         </Link>
                     ))}
-                </nav>
 
-                {/* Mobile CTA */}
-                <div className="flex flex-col items-center mt-8">
+                    {/* Mobile CTA */}
                     <Link
                         href="/contact"
                         onClick={() => setIsMenuOpen(false)}
-                        className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors shadow-lg shadow-purple-500/30 active:scale-95 transition-transform"
+                        className="mt-6 bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full text-lg font-medium transition-colors shadow-md active:scale-95 transition-transform"
                     >
                         Get Started
                     </Link>
-                </div>
+                </nav>
             </div>
         </>
     );
